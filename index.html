@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Demo Transportation Taxi Cab Near You</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+			CSS
+			============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+
+<body>
+
+    <!-- start preloader codes -->
+    <style>
+        #preloader {
+            background: #000 url(img/demo.gif) no-repeat center center;
+            background-size: 20%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+    </style>
+    <div id="preloader"></div>
+
+    <!-- end preloader codes -->
+
+
+    <header id="header">
+        <div class="header-top">
+        </div>
+        <div class="container main-menu">
+            <div class="row align-items-center justify-content-between d-flex">
+                <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li class="menu-active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <!-- <li><a href="gallery.html">Gallery</a></li> -->
+                        <!-- <li class="menu-has-children"><a href="blog-home.html">Blog</a> -->
+                        <!-- <ul>
+                                <li><a href="blog-home.html">Blog Home</a></li>
+                                <li><a href="blog-single.html">Blog Single</a></li>
+                                <li class="menu-has-children"><a href="">Level 2</a>
+                                    <ul>
+                                        <li><a href="#">Item One</a></li>
+                                        <li><a href="#">Item Two</a></li>
+                                    </ul>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <!-- <li><a href="elements.html">Elements</a></li> -->
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- #nav-menu-container -->
+            </div>
+        </div>
+    </header>
+    <!-- #header -->
+    <style>
+        .banner-area .myVideo {
+            position: absolute;
+            right: 0;
+            /* bottom: 0; */
+            /* min-width: 100%;
+            min-height: 10vh; */
+            height: 750px;
+            width: 100%;
+        }
+    </style>
+    <!-- start banner Area -->
+    <section class="banner-area relative" id="home">
+
+
+        <video autoplay muted loop class="myVideo">
+			  <source src="/img/taxi video.mp4" type="video/mp4" >
+		 </video>
+
+        <div class="overlay overlay-bg">
+        </div>
+
+
+        <div class="container">
+            <div class="row fullscreen d-flex align-items-center justify-content-between">
+                <div class="banner-content col-lg-6 col-md-6">
+                    <h6 class="text-white">Need a ride? just call</h6>
+                    <h1 class="text-uppercase">
+                        +234-703-823-1108
+                    </h1>
+                    <p class="pt-10 pb-10 text-white">
+                        Demo Transportation Services is for-hire cars and commercial transportation option that meets a variety of needs, including basic mobility in emergencies, general transportation for non-drivers, mobility for tourists and visitors.
+                    </p>
+                    <a href="tel:+234703823110" class="primary-btn text-uppercase">Call for taxi</a>
+                </div>
+                <div class="col-lg-4  col-md-6 header-right">
+                    <h4 class="pb-30">Book Your Texi Online!</h4>
+
+                    <form action="https://formspree.io/f/xwkjaowr" method="post" id="my-form" class="form">
+
+                        <div class="from-group">
+                            <input class="form-control txt-field" type="text" name="Name" placeholder="Your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your name'">
+
+                            <input class="form-control txt-field" type="email" name="Email" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'">
+
+                            <input class="form-control txt-field" type="number" name="Phone" placeholder="Phone number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone number'">
+
+                            <input class="form-control txt-field" type="text" name="From" placeholder="From Destination" onfocus="this.placeholder = ''" onblur="this.placeholder = 'From Destination'">
+
+                            <input class="form-control txt-field" type="text" name="To" placeholder="To Destination" onfocus="this.placeholder = ''" onblur="this.placeholder = 'To Destination'">
+
+                        </div>
+
+                        <!-- <div class="form-group">
+                            <div class="default-select" id="default-select">
+                                <select>
+											<option value="" disabled selected hidden>From Destination</option>
+											<option value="1">Destination One</option>
+											<option value="2">Destination Two</option>
+											<option value="3">Destination Three</option>
+										</select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="default-select" id="default-select2">
+                                <select>
+											<option value="" disabled selected hidden>To Destination</option>
+											<option value="1">Destination One</option>
+											<option value="2">Destination Two</option>
+											<option value="3">Destination Three</option>
+										</select>
+                            </div>
+                        </div> -->
+
+                        <div class="form-group">
+                            <div class="input-group dates-wrap">
+                                <input id="datepicker2" class="dates form-control" placeholder="Date & time" type="text">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input class="form-control txt-field" type="time" name="Time" placeholder="Time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Time'" id="appt-time" min="0:00" max="0:00">
+
+                        <div class="form-group">
+
+                            <button id="" class="btn btn-default btn-lg btn-block text-center text-uppercase">Make reservation</button>
+
+                        </div>
+                    </form>
+                    <div id="status"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End banner Area -->
+
+    <Style>
+        #status {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        
+        #status.success {
+            background-color: rgb(13, 0, 255);
+            animation: status 4s ease forwards;
+            color: #f9d700;
+        }
+        
+        #status.error {
+            background-color: rgb(255, 0, 0);
+            color: #f1f1f1;
+            animation: status 4s ease forwards;
+        }
+        
+        @keyframes status {
+            0% {
+                opacity: 1;
+                pointer-events: all;
+            }
+            90% {
+                opacity: 1;
+                pointer-events: all;
+            }
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    </Style>
+
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Thanks for booking a ride!";
+                    form.reset()
+                    status.classList.add('success')
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.classList.add('error')
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+
+    <!-- Start home-about Area -->
+    <!-- <section class="home-about-area section-gap">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 about-left">
+                    <img class="img-fluid" src="img/about-img.jpg" alt="">
+                </div>
+                <div class="col-lg-6 about-right">
+                    <h1>Globally Connected by Large Network</h1>
+                    <h4>We are here to listen from you deliver exellence</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                    </p>
+                    <a class="text-uppercase primary-btn" href="#">Get Details</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End home-about Area -->
+
+    <!-- Start services Area -->
+    <!-- <section class="services-area pb-120">
+				<div class="container">
+					<div class="row section-title">
+						<h1>What Services we offer to our clients</h1>
+						<p>Who are in extremely love with eco friendly system.</p>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 single-service">
+							<span class="lnr lnr-car"></span>
+							<a href="#"><h4>Taxi Service</h4></a>
+							<p>
+								Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+							</p>
+						</div>
+						<div class="col-lg-4 single-service">
+							<span class="lnr lnr-briefcase"></span>
+							<a href="#"><h4>Office Pick-ups</h4></a>
+							<p>
+								Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+							</p>
+						</div>
+						<div class="col-lg-4 single-service">
+							<span class="lnr lnr-bus"></span>
+							<a href="#"><h4>Event Transportation</h4></a>
+							<p>
+								Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+							</p>
+						</div>												
+					</div>	
+				</div>	
+			</section> -->
+    <!-- End services Area -->
+
+    <!-- Start image-gallery Area -->
+    <!-- <section class="image-gallery-area section-gap">
+        <div class="container">
+            <div class="row section-title">
+                <h1>Image Gallery that we like to share</h1>
+                <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 single-gallery">
+                    <a href="img/g1.jpg" class="img-gal"><img class="img-fluid" src="img/g1.jpg" alt=""></a>
+                    <a href="img/g4.jpg" class="img-gal"><img class="img-fluid" src="img/g4.jpg" alt=""></a>
+                </div>
+                <div class="col-lg-4 single-gallery">
+                    <a href="img/g2.jpg" class="img-gal"><img class="img-fluid" src="img/g2.jpg" alt=""></a>
+                    <a href="img/g5.jpg" class="img-gal"><img class="img-fluid" src="img/g5.jpg" alt=""></a>
+                </div>
+                <div class="col-lg-4 single-gallery">
+                    <a href="img/g3.jpg" class="img-gal"><img class="img-fluid" src="img/g3.jpg" alt=""></a>
+                    <a href="img/g6.jpg" class="img-gal"><img class="img-fluid" src="img/g6.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End image-gallery Area -->
+
+    <!-- Start reviews Area -->
+    <section class="reviews-area section-gap">
+
+        <div class="container">
+            <div class="contact-page-area section-gap">
+                <div class="row section-title">
+                    <h1>Client’s Reviews</h1>
+                    <p>Our client our priority making sure to satisfy them at all cost.</p>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-review">
+                            <h4>Victor Brown</h4>
+                            <p>
+                                The service was classic and i will keep calling for your transportation service at all time.
+                            </p>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-review">
+                            <h4>Chioma</h4>
+                            <p>
+                                Cab service are excellent I will always book a ride from you.
+                            </p>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-review">
+                            <h4>Xchange</h4>
+                            <p>
+                                My number transportation services in Asaba Nigeria.
+                            </p>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-review">
+                            <h4>Stephen</h4>
+                            <p>
+                                The movement is smooth and comforting thanks demo taxi.
+                            </p>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-review">
+                            <h4>Sophia</h4>
+                            <p>
+                                Always on time and never disappointing book demo taxi near you.
+                            </p>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-review">
+                            <h4>P Money</h4>
+                            <p>
+                                My family likes the way drive cool and comfortable.
+                            </p>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-review">
+                            <h4>Jon Banks</h4>
+                            <p>
+                                Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+                            </p>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-review">
+                            <h4>Landon Houston</h4>
+                            <p>
+                                Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+                            </p>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-review">
+                            <h4>Nelle Wade</h4>
+                            <p>
+                                Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+                            </p>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                    <!-- review post by client -->
+
+                    <style>
+                        .form-areaRev {
+                            margin-bottom: -170px;
+                        }
+                        
+                        .form-areaRev input {
+                            padding: 15px;
+                        }
+                        
+                        .form-areaRev input,
+                        .form-areaRev textarea {
+                            border-radius: 0;
+                            font-size: 12px;
+                        }
+                        
+                        .form-areaRev textarea {
+                            height: 190px;
+                            margin-top: 0px;
+                            padding: 15px;
+                        }
+                        
+                        .form-areaRev .genric-btn {
+                            -webkit-transition: all 0.3s ease 0s;
+                            -moz-transition: all 0.3s ease 0s;
+                            -o-transition: all 0.3s ease 0s;
+                            transition: all 0.3s ease 0s;
+                            border-radius: 0 !important;
+                            font-size: 14px;
+                            text-transform: uppercase !important;
+                        }
+                        
+                        .form-areaRev .genric-btn:hover {
+                            border: 1px solid #f9d700;
+                            color: #f9d700 !important;
+                        }
+                        
+                        .rating {
+                            padding: 15px 0px 10px;
+                            position: relative;
+                            /* padding: 40px 50px;
+                        border: 1px solid #ccc;
+                        background: #f9f9f9; */
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            flex-direction: row-reverse;
+                        }
+                        
+                        .rating label {
+                            color: #e6e6e6;
+                            font-size: 25px;
+                            cursor: pointer;
+                            transition: color 0.2s ease;
+                        }
+                        
+                        .rating label:not(:first-of-type) {
+                            padding-right: 2px;
+                        }
+                        
+                        .rating label:before {
+                            content: "\2605";
+                            font-size: 25px;
+                            color: #ccc;
+                            line-height: 1;
+                        }
+                        
+                        .rating input {
+                            display: none;
+                        }
+                        
+                        .rating input:checked~label:before,
+                        .rating:not(:checked)>label:hover:before,
+                        .rating:not(:checked)>label:hover~label:before {
+                            color: goldenrod;
+                        }
+                        
+                        .rev h1 {
+                            font-size: 25px;
+                            padding-bottom: 15px
+                        }
+                        
+                        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+                        body {
+                            background: #f1f1f1;
+                        }
+                    </style>
+
+                    <div class="col-lg-8">
+
+                        <div class="rev">
+                            <h1>Enter Your Review Below</h1>
+                        </div>
+
+
+                        <form action="https://formspree.io/f/xwkjaowr" method="post" id="my-form1" class="form-areaRev">
+
+
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <input name="name" placeholder="Enter your name" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your name'" class="common-input mb-20 form-control" required="" type="text">
+
+                                    <input name="number" placeholder="Enter Whatsapp Number" pattern="" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Whatsapp Number'" class="common-input
+                                mb-20 form-control" required="" type="number">
+
+                                    <!-- <input name="subject" placeholder="Enter subject" onfocus="this.placeholder=''" onblur="this.placeholder='Enter subject'" class="common-input mb-20 form-control" required="" type="text"> -->
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <textarea class="common-textarea form-control" name="message" placeholder="Enter Messege" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Messege'" required=""></textarea>
+
+                                    <div class="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                                    </div>
+
+                                    <!-- <div class="rating-box">
+                                    <div class="stars">
+
+                                        <i class=”5″>☆</i>
+                                        <i for=”4″>☆</i>
+                                        <i for=”3″>☆</i>
+                                        <i for=”2″>☆</i>
+                                        <i for=”1″>☆</i> -->
+
+                                    <!-- <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i> -->
+                                    <!-- </div>
+                        </div> -->
+                                    <div class="col-lg-12">
+                                        <div class="alert-msg" style="text-align: left;"></div>
+                                        <button class="genric-btn primary" style="float: right;">Send Message</button>
+                                    </div>
+                                    <div id="status1"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+    </section>
+    <!-- End reviews Area -->
+
+    <Style>
+        #status1 {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        
+        #status1.success1 {
+            background-color: rgb(13, 0, 255);
+            animation: status 2.5s ease forwards;
+            color: #f9d700;
+        }
+        
+        #status1.error1 {
+            background-color: rgb(255, 0, 0);
+            color: #f1f1f1;
+            animation: status 2.5s ease forwards;
+        }
+        
+        @keyframes status1 {
+            0% {
+                opacity: 1;
+                pointer-events: all;
+            }
+            90% {
+                opacity: 1;
+                pointer-events: all;
+            }
+            100% {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    </Style>
+
+    <script>
+        var form = document.getElementById("my-form1");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status1 = document.getElementById("status1");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status1.innerHTML = "Thanks for the review";
+                    form.reset()
+                    status1.classList.add('success1')
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status1.classList.add('error1')
+                            status1.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+
+    <!-- Start home-call to action Area -->
+    <section class="home-calltoaction-area relative">
+        <div class="container">
+            <div class="overlay overlay-bg"></div>
+            <div class="row align-items-center section-gap">
+                <div class="col-lg-8">
+                    <h1>Experience Great Support</h1>
+                    <p>
+                        Reach out to us for quick and great support from our costumer care.
+                    </p>
+                </div>
+                <div class="col-lg-4 btn-left">
+                    <a href="https://wa.me/p/5122979084447222/2347038231108" class="primary-btn">Reach Our Support Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End home-call to action Area -->
+
+    <!-- Start latest-blog Area -->
+    <!-- <section class="latest-blog-area section-gap">
+        <div class="container">
+            <div class="row section-title">
+                <h1>Latest News from our Blog</h1>
+                <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-latest-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/b1.jpg" alt="">
+                        </div>
+                        <ul class="tags">
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Life Style</a></li>
+                        </ul>
+                        <a href="#">
+                            <h4>Portable latest Fashion for young women</h4>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        </p>
+                        <p class="date">31st January, 2018</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-latest-blog">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/b2.jpg" alt="">
+                        </div>
+                        <ul class="tags">
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Life Style</a></li>
+                        </ul>
+                        <a href="#">
+                            <h4>Portable latest Fashion for young women</h4>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                        </p>
+                        <p class="date">31st January, 2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End latest-blog Area -->
+
+    <!-- <style>
+        .footer-area .overlay-bg1 {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            left: 0;
+            right: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: -85px;
+        }
+    </style> -->
+
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+
+
+        <!-- <div class="overlay1 overlay-bg1"> -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>Quick links</h6>
+                        <ul>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Brand Assets</a></li>
+                            <li><a href="dmocapitals@gmail.com">Investor Relations</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>Features</h6>
+                        <ul>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Brand Assets</a></li>
+                            <li><a href="#">Investor Relations</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>Resources</h6>
+                        <ul>
+                            <li><a href="https://wa.me/p/5122979084447222/2347038231108">Guides</a></li>
+                            <li><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.6197607040618!2d6.695884369555747!3d6.200357199611721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043f349bdcb793b%3A0x24d2d9a5fefa3a8e!2sSmart%20Delta%20Delicacies%2FFruit%20Arena!5e0!3m2!1sen!2sng!4v1681987561598!5m2!1sen!2sng">Research</a></li>
+                            <li><a href="https://wa.me/p/5122979084447222/2347038231108">Experts</a></li>
+                            <li><a href="#">Agencies</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                    <div class="single-footer-widget">
+                        <h6>Follow Us</h6>
+                        <p>Let us be social</p>
+                        <div class="footer-social d-flex align-items-center">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="https://wa.me/p/5122979084447222/2347038231108"><i class="fa fa-whatsapp"></i></a>
+                            <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>Newsletter</h6>
+                        <p>Stay update with our latest</p>
+                        <div class="" id="mc_embed_signup">
+                            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+                                <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Email '" required="" type="email">
+                                <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                </div>
+
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-80 mx-auto footer-text col-lg-12">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script> All rights reserved | This template is made wit by <a href="#" target="_blank">Demo website design & development</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!-- <img class="footer-bottom" src="img/footer-bottom.png" alt=""> -->
+    </footer>
+    <!-- End footer Area -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <script>
+        // Select all elements with the"i" tag and store them in a NodeList called"stars"
+        const stars = document.querySelectorAll(".stars i");
+
+        // Loop through the"stars" NodeList
+        stars.forEach((star, index1) => {
+            // Add an event listener that runs a function when the"click" event is triggered
+            star.addEventListener("click", () => {
+                // Loop through the"stars" NodeList Again
+                stars.forEach((star, index2) => {
+                    // Add the"active" class to the clicked star and any stars with a lower index
+                    // and remove the"active" class from any stars with a higher index
+                    index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
+                });
+            });
+        });
+    </script>
+
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- start preloader script -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none"
+
+        })
+    </script>
+    <!-- <iframe width="560" height="315" src=" https://www.youtube.com/embed/KVbrHTRxgsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe> -->
+
+    <!-- end preloader script -->
+
+
+</body>
+
+</html>
